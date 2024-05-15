@@ -25,12 +25,13 @@
   grid-column: 1/13;
   position: relative;
   background: url(../photos/about_us.jpg) no-repeat center center/cover;
-  height: 500px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: var(--white);
+  font-weight: bolder;
 }
 
 .hero-section .overlay {
@@ -70,11 +71,12 @@
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   column-gap: 40px;
+  height: 600px;
+  margin-top: 50px;
 }
 
 .left {
   grid-column: 2/6;
-  background-color: var(--myblue);
 }
 
 .right {
@@ -103,7 +105,7 @@
   color: var(--myblue);
 }
 
-.right_button{
+.right_button {
   width: 200px;
   height: 50px;
   border: none;
@@ -116,10 +118,9 @@
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
-
 }
 
-.right_button:hover{
+.right_button:hover {
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -128,4 +129,54 @@
   box-shadow: 1px 1px 20px 0px var(--myblue);
   background-color: var(--mylight);
   color: var(--white);
+}
+
+.left {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.big_img {
+  background-image: url(../photos/c94d2a94760946b1d50a3cbeba5c348a.jpg);
+  background-size: cover;
+  grid-area: 1/2/8/5;
+  border-radius: 8px;
+  position: relative;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.med_img{
+position: absolute;
+background-image: url(../photos/med\ img.jpg);
+border: 20px solid var(--white);
+background-size: cover;
+width: 320px;
+height: 400px;
+left: -150px;
+bottom: 30px;
+}
+
+.small_div{
+  position: absolute;
+  background-color: var(--myblue);
+  width: 140px;
+  height: 160px;
+  border-radius:8px ;
+  -webkit-border-radius:8px ;
+  -moz-border-radius:8px ;
+  -ms-border-radius:8px ;
+  -o-border-radius:8px ;
+  top: 50px;
+  left: -70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
 }

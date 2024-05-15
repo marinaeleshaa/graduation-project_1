@@ -26,24 +26,25 @@
 
 .header {
   background-color: var(--white);
-  height: 60px;
   position: fixed;
   grid-area: 1/1/2/12;
   z-index: 200;
-  width:100% ;
-  opacity: 0.5;
+  top: 0;
 }
 
+.align-items-center{
+  padding: 10px 0px 10px 0px;
+}
 .logo {
-  max-width: 100%;
-  height: 60px;
+  height: 65px;
+  padding: 5px;
 }
 
 .nav-link {
   color: var(--myblue);
   font-weight: bold;
-  padding: 10px 15px;
   font-size: 20px;
+  margin-left: 5px;
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
   border-radius:8px ;
   -webkit-border-radius:8px ;
@@ -73,7 +74,7 @@
   background-color: var(--myblue);
   border-color: var(--myblue);
   color: var(--white);
-  margin-left: 10px;
+  margin-left: 20px;
   border: none;
   padding: 5px;
   width: 85px;
@@ -86,6 +87,9 @@
   font-weight: bold;
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
+.col-md-3{
+  padding-right: 50px !important;
+}
 
 .custom-btn:hover {
   background-color: var(--mylight);
@@ -96,6 +100,11 @@
 
 hr{
   background-color: var(--myblue);
+}
+
+
+.hero-section{
+  margin-top : 80px; /*make it as the header height*/
 }
 
 /* footer style  */
@@ -209,4 +218,8 @@ div .lineh{
 .fa-brands:hover{
   color: var(--mylight);
   font-size: 25px;
+}
+.nav{
+  flex-wrap: nowrap !important;
+  margin-left: 140px;
 }
